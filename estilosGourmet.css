@@ -1,0 +1,164 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	/*border:solid green;*/
+	font-family:verdana;
+}
+/*barra de navegacion*/
+/*
+las lista tienen un margen ,relleno y viñetas ;por defecto
+con estas propiedades reseteamos tales valores
+*/
+ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	overflow: auto; 
+	background-color: white;
+	box-shadow: 5px 5px whitesmoke;
+}
+/*
+display block hace que el elemento <a> ocupe todo el ancho
+de su contenedor(li)
+*/
+li a{
+	display: block;
+	text-decoration: none;
+	padding: 14px 16px;
+	color: black;
+}
+/*
+float hace que el contenido(li) se desborde de su contenedor(ul)
+,ademas se altera el ancho de los elemento <li>
+*/
+li{
+	float: left;
+	margin: 14px 16px;
+}
+
+li a:hover{
+	background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px){
+	li.oculto{
+		display: none;
+	}
+}
+/*fin barra*/
+/*logo*/
+div p#posicion{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-indent: 20px;
+	font-weight: bold;
+	font-size: 100%;
+	color: #555;
+}
+/*fin logo*/
+/*about*/
+div#about{
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+div#aboutcatering{
+	width: 50%;
+	float: left;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+div#aboutcatering h1 , div#aboutcatering h4{
+	text-align: center;
+	word-spacing: 5px;
+}
+
+h4{
+	margin-top: 50px;
+}
+hr{
+	clear: left;
+}
+
+div p.parrafo{
+	line-height: 32px;
+}
+
+@media only screen and (max-width: 600px){
+	div#about{
+		display: none;
+	}
+	div#aboutcatering{
+		width: 100%;
+	}
+}
+/*fin about*/
+/*menu*/
+div#ourmenu{
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+div#menu{
+	width: 50%;
+	float: left;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px){
+	div#ourmenu,div#menu{
+		width: 100%;
+	}
+}
+/*fin menu*/
+/*contacto*/
+input[type='text'],textarea,input[type=date]{
+	width: 100%;
+	padding: 14px 16px;
+	margin:10px;
+	border:none;
+	border-bottom-style: solid;
+	border-bottom-color: #f5f5f5;
+}
+input[type="submit"]{
+	margin:10px;
+	border:none;
+	padding: 14px 16px;
+	opacity: 0.7;
+}
+input[type="submit"]:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+form{
+	padding: 10px;
+}
+address{
+	color: cadetblue;
+	font-weight: bolder;
+	/*text-shadow: 5px 5px darkgreen;*/
+}
+div#contact{
+	padding: 14px 16px;
+}
+div#contact h1,div#contact p,div#contact address{
+	margin:16px;
+}
+/*fin contacto*/
+
+footer{
+	background-color: #f5f5f5;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+}
+
